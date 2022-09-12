@@ -1,0 +1,306 @@
+
+ <!-- français = fr-->
+
+
+    <meta charset="UTF-8">
+   <title>galerie</title>
+    <style>
+	#corps{
+  width: 100%; 
+  height: 700px;
+  display: flex; 
+  flex-wrap: no-wrap; 
+  background: #f6f6f6;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*****SCROLLBAR*****/
+::-webkit-scrollbar {
+	width: 3px;
+}
+::-webkit-scrollbar-thumb {
+	background: #b3b3b3; 
+}
+
+#colonne{
+  background: #fdfdfd; 
+  height: 100%; 
+  width: 300px; 
+  padding: 2%; 
+  overflow: hidden; 
+}
+
+#colonne #avatar{
+  margin: auto;
+  width: 200px; 
+  height: 200px;
+  border-radius: 200px;
+  border: 20px solid #f6f6f6;
+  overflow: hidden; 
+}
+
+#avatar img{
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover;
+}
+
+#colonne p{
+  width: 100%; 
+  background: #f6f6f6;
+  border: 20px solid #f6f6f6;
+  text-align: justify; 
+  font-family: arial; 
+  font-size: 15px;
+  line-height: 18px;
+  overflow: auto;
+}
+
+/*#colonne #liens{
+ text-align: center;
+ word-spacing: 10px;
+}
+
+#colonne #liens a{
+  text-decoration: none;
+}
+
+#colonne #liens img{
+  width: 30px; 
+}*/
+
+#contenu{
+  background: #353232;
+  padding: 20px; 
+  width: 75%; 
+  height: 100%; 
+  display: flex; 
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.photo{
+  height: 250px;
+  margin: 10px auto;
+  position: relative; 
+  overflow: hidden; 
+}
+
+.photo img{
+  height: 250px; 
+  transition: ease-out 0.2s;
+  object-fit: cover;
+  border-radius: 17%;
+}
+
+.photo:hover > .fond{
+  top: 0;
+  left: 0; 
+  height: 100%; 
+  width: 100%;
+  transition: ease-in-out 0.3s;
+}
+
+.photo:hover > img{
+  transform: scale(1.3);
+  transition: ease-in-out 0.2s;
+}
+.fond{
+  height: 0; 
+  width: 0; 
+  background: rgba(234,234,234,0.6); 
+  position: absolute; 
+  overflow: hidden;
+  top: 50%; 
+  left: 50%; 
+  transition: ease-out 0.2s;
+}
+
+.info{
+  display: block;
+  text-decoration: none;
+  width: 80%; 
+  height: 12%;
+  padding-right: 10px;
+  padding-left: 10px; 
+  line-height: 35px;
+  background: rgba(255,255,255,0.7); 
+  margin: auto; 
+  margin-top: 130px; 
+  text-align: center; 
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-family: arial; 
+  color: black;
+  transition: 0.2s;
+}
+
+.info:hover{
+  background: rgba(255,255,255,0.9); 
+  transition: 0.2s;
+}
+
+.deux{
+  margin-top: 15px;
+}
+	</style>
+
+
+
+
+<div id="corps">
+  <div id="colonne">
+    <div id="avatar"><img src="image/logo.png" alt="img-profil"></div>
+    
+    <p>Après mon découvert des langages web comme HTML, CSS, JS... je me demande comment je peux améliorer mes savoirs et découvrir des nouvelles proportions dans ces langages?<br> <br>Pour répondre je me dis qu'il faut associer ce que j'aime faire c'est-à-dire dessiner et ces langages. De cette manère je peux m'améliorer dans une courte durée et m'amuser en même temps. Mon aventure avec les tutorielles Youtube, W3school, MDN... commence pour réaliser les travaux suivants:  </p>
+    <!-- lien
+    <div id="liens">
+      <a href="lien">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="instagram"/>
+      </a>
+      <a href="lien">
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/A19BO%2Bc5nIL.png" alt="deviantart"/>
+      </a>
+      <a href="lien">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/022/171/213/small/zeddie-arkay-artstation-logo-400-copy.jpg?1574367012" alt="artstation"/>
+      </a>
+    </div>
+	-->
+  </div>
+  
+  <div id="contenu">
+    <div class="photo">
+      <img src="image/art code/1-1.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1KsSpk3GdDbVHBG_2SoCFUFFmJFewJNfV?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/1.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="image/art code/2.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1IzgbsC0g9bteuW3p3OXVFNkmDkwG-Am6?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/2.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="image/art code/3.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/14qJG1W7WPwXAFY74-CwXriCoVs0Cszrs?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/3.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="image/art code/4.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/16kVqXQ3IUFhWOw9vZJk2wi2_v0HYJdC0?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/4.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="image/art code/5.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1dXOBY8d9MkUo9rxRXPo2Dpvsi2eo_qq6?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/5.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    <div class="photo">
+      <img src="image/art code/6.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1p1br26vmT8Q66hZ74pobRjtfDuiS4K4x?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/6.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    <div class="photo">
+      <img src="image/art code/7.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1BvR2LFlIiuZfKkvfCQZoABiN5i_urCst?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/7.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    <div class="photo">
+      <img src="image/art code/8.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1HYB7rfBVD6xjKbxtyD0CrhzT0ML3gzhT?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/8.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    <div class="photo">
+      <img src="image/art code/9.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1PkmJU7cx45Jxt_ZVncVuPAmyxTtqXl70?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/9.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+	
+	
+    
+    <div class="photo">
+      <img src="image/art code/10.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1JC_sOB9CIGsIJq5b_BxJUh3gwFl-WVnD?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/10.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+	    <div class="photo">
+      <img src="image/art code/11.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1omJJ3NLW0RgA3C8ej2_5gMRosy3GCthS?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/11.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+	
+    <div class="photo">
+      <img src="image/art code/12.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1SSRozjuC76CsEVmIqDUbO_mHnPjwGfVc?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/12.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    
+    <div class="photo">
+      <img src="image/art code/13.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1T1HEfBousxUIt7WZSbTNFjKbj2WZ_Iag?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/13.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    
+    <div class="photo">
+      <img src="image/art code/14.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/1qxIDrIEn7o-vCC_MfdVu0Ie6yzYMtifm?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/14.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    
+    <div class="photo">
+      <img src="image/art code/15.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/11wWjNP2agvI-cMy7H-sLfSa6cyHMZFSR?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/15.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+    
+    
+    <div class="photo">
+      <img src="image/art code/16.png" alt="">
+      <div class="fond">
+        <a href="https://drive.google.com/drive/folders/11ykgpmv3bgwBboJKnrL6SWhiKIOG2f69?usp=sharing" class="info" target="_blank" rel="noopener">Code source</a>
+        <a href="image/art code/16.png" class="info deux" target="_blank" rel="noopener">Taille réelle</a>
+      </div>
+    </div>
+</div>
+
+</div>
